@@ -1,0 +1,68 @@
+# nilai = 70
+
+# if nilai > 75:
+#     print("Nilai A")
+# elif nilai > 65:
+#     print("nilai B")
+# else: 
+#     print("nilai C")
+
+
+# suhu = 35
+# if suhu >= 35:
+#     print("PANAS")
+# if suhu > 30:
+#     print("SAUNA")
+# elif suhu > 20:
+#     print ("NORMAL")
+# else:
+#     print("DINGIN")
+
+
+# # input nilai
+# umur = int(input("Masukkan umur Anda: "))
+# # misalnya, umur = 16
+# # Percabangan
+# if umur < 13:
+#     kategori = "Anak-anak"
+# elif umur < 18:
+#     kategori = "Remaja"
+# elif umur < 60:
+#     kategori = "Dewasa"
+# else:
+#     kategori = "Lansia"
+# # Menampilkan umur dan kategori
+# print("Umur:", umur, "Kategori:", kategori)
+
+
+# nilai = 70
+
+# status = "Lulus" if nilai >= 60 else "Tidak Lulus"
+# print(status)
+
+
+# tinggiBadan = 145
+# status = "boleh naik" if nilai >= 145 else "tidak boleh naik"
+# print('status')
+
+
+#program diskon grand opening toko niffari
+total_belanja = float(input("masukkan total belanja (Rp:)"))
+if total_belanja > 100000:
+    diskon = 0.20 * total_belanja
+    print("selamat anda mendapatkan diskon 20%")
+
+elif total_belanja > 50000:
+    diskon = 0.10 * total_belanja
+    print("selamat anda mendapatkan diskon 10%")
+
+else:
+    diskon = 0
+    print("maaf anda tidak dapat diskon")
+
+total_bayar = total_belanja - diskon
+
+
+print(f"Total Belanja : Rp {total_belanja:,.0f}")
+print(f"Diskon        : Rp {diskon:,.0f}")
+print(f"Total Bayar   : Rp {total_bayar:,.0f}")
