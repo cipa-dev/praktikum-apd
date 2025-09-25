@@ -47,22 +47,22 @@
 
 
 #program diskon grand opening toko niffari
-total_belanja = float(input("masukkan total belanja (Rp:)"))
-if total_belanja > 100000:
-    diskon = 0.20 * total_belanja
-    print("selamat anda mendapatkan diskon 20%")
+# total_belanja = float(input("masukkan total belanja (Rp:)"))
+# if total_belanja > 100000:
+#     diskon = 0.20 * total_belanja
+#     print("selamat anda mendapatkan diskon 20%")
 
-elif total_belanja > 50000:
-    diskon = 0.10 * total_belanja
-    print("selamat anda mendapatkan diskon 10%")
+# elif total_belanja > 50000:
+#     diskon = 0.10 * total_belanja
+#     print("selamat anda mendapatkan diskon 10%")
 
-else:
-    diskon = 0
-    print("maaf anda tidak dapat diskon")
+# else:
+#     diskon = 0
+#     print("maaf anda tidak dapat diskon")
 
-total_bayar = total_belanja - diskon
+# total_bayar = total_belanja - diskon
 
 
-print(f"Total Belanja : Rp {total_belanja:,.0f}")
-print(f"Diskon        : Rp {diskon:,.0f}")
-print(f"Total Bayar   : Rp {total_bayar:,.0f}")
+# print(f"Total Belanja : Rp {total_belanja:,.0f}")
+# print(f"Diskon        : Rp {diskon:,.0f}")
+# print(f"Total Bayar   : Rp {total_bayar:,.0f}")
