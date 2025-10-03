@@ -33,7 +33,7 @@ ciput = int(input('Masukkan Jumlah Ciput/pcs :'))
 peniti = int(input('Masukkan Jumlah Peniti/pcs :'))
 
 # hitung total belanja
-total = (hijab_pashmina * 70000) + (hijab_segiempat * 35000) + (hijab_instan * 40000)
+total = (hijab_pashmina * 70000) + (hijab_segiempat * 35000) + (hijab_instan * 40000) + (ciput * 15000) + (peniti * 5000)
 
 if member.lower() == 'ya' and login:
     diskon = total * 0.15
