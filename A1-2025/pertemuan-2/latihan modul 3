@@ -66,3 +66,6 @@
 # print(f"Total Belanja : Rp {total_belanja:,.0f}")
 # print(f"Diskon        : Rp {diskon:,.0f}")
 # print(f"Total Bayar   : Rp {total_bayar:,.0f}")
+
+
+

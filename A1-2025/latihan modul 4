@@ -1,0 +1,83 @@
+# ulangi = 10
+# for i in range (11): #-1 #_ untuk mengosongkan variabel
+#     print(f'perulangan ke-{i}')
+
+
+
+# simpan = [1, 'Dapupu',  4.00, True]
+# for i in simpan:
+#     print(i)
+
+
+#print ganjil genap
+# for i in range (0,10,2):
+#     print(i)
+
+
+#perkalian
+# for i in range(1, 4):# Mengontrol baris dalam tabel perkalian
+#     for j in range(1, 5):# Mengontrol kolom dalam tabel perkalian
+#      print(f'{i} x {j} = {i * j}')
+#     print('i') #biar ada jarak tiap iterasi
+
+
+
+# jawab = 'ya'
+# hitung = 0
+# while(jawab == 'ya'):
+#     hitung += 1
+#     jawab = input("Ulang lagi? ")
+# print(f"Total perulangan: {hitung}")
+
+
+
+# Program segitiga siku-siku 
+# tinggi = int(input("Masukkan tinggi segitiga: "))
+
+# for i in range(7, tinggi + 7):
+#     print("*" * i)
+
+
+
+
+# Program Membuat Segitiga Sama Kaki dan Terbalik
+# print("=== Program Segitiga Sama Kaki ===")
+# tinggi = int(input("Masukkan tinggi segitiga: "))
+
+# print("\nSegitiga Sama Kaki:")
+# for i in range(1, tinggi + 1):            # baris segitiga
+#     for j in range(tinggi - i):            # spasi di kiri
+#         print(" ", end="")
+#     for k in range(2 * i - 1):             # bintang
+#         print("*", end="")
+#     print()  # pindah baris
+
+# print("\nSegitiga Sama Kaki Terbalik:")
+# for i in range(tinggi, 0, -1):             # baris segitiga terbalik
+#     for j in range(tinggi - i):            # spasi di kiri
+#         print(" ", end="")
+#     for k in range(2 * i - 1):             # bintang
+#         print("*", end="")
+#     print()  # pindah baris
+
+
+
+# angka = [2, 5, 8, 12, 15, 7, 20]
+# print("Mencari angka pertama yang lebih besar dari 10...")
+# for n in angka:
+#     print(f"Sekarang memeriksa angka: {n}")
+#     if n > 10:
+#         print(f"Angka {n} lebih besar dari 10, Perulangan berhenti.")
+#         break
+# print("Program selesai.")
+
+
+
+# for i in range(1, 11):
+#     if i % 2 != 0:
+#         continue
+#     print(f"Angka genap ditemukan: {i}")
+# print("\nProgram selesai.")
+
+
+
