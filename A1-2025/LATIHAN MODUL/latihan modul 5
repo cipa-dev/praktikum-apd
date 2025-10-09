@@ -1,0 +1,54 @@
+# tuple tidak bisa diubah contohnya, bulan, tahun
+# list bisa diubah contohnya, nama, alamat
+
+#mendefinisikan list
+# praktikum = ['APD', 'orsikom', 'jarkom', ['RPL', 'basis data']]
+# praktikum = ['APD', 'orsikom', 'jarkom', 'RPL']
+
+# angka = [1,2,3,4,5,6,7,8,9,10,11]
+# huruf = ['a', 'b', 'c']
+
+# mahasiswa = [["Daffa", "Dante", "Santoso"], ["Pernanda", "Triya", "Ahnaf"]]
+# # perulangan for untuk mendapatkan semua elemen
+# for i in mahasiswa: # mengambil semua data dari mahasiswa
+#     for j in i : # megambil semua data dari i # i itu index #i kurung siku pertama yng kuning #j itu kurung siku kedua yg pink
+#         print (j)
+        # misalnya [0][2] = santoso, daffa itu index 0, dante itu index 1, santoso itu index 2. lalu dia mengulang lagi ke index 1
+        #misalnya [1][0] = peranda index 0, triya index 1, anhaf index 2
+
+# tes = [1,2,3,4,5,6,7,8,9,10]
+# print(tes[0: 10 :2]) #menampilkan list dari index 0 sampai 10 dengan kelipatan 2 #jumlah 10=-1 jadi hanya sampai index 9 #angka terakhir untuk kelipatan
+
+# praktikum.remove('APD') #menghapus list menggunakan nama datanya
+# print(praktikum)
+
+# buang = praktikum.pop()  #ga ada nilai dalam pop maka menghapus list terakhir #menghapus list menggunakan index
+# print(buang) 
+
+# del praktikum[2] #menghapus list
+# print(praktikum)
+
+# inputNilai = input('Matkul:') #input nilai
+# praktikum.append(inputNilai) #menambah list
+# print(praktikum)
+
+# praktikum.insert(2, 'basis data')
+# print(praktikum)
+
+# praktikum.append('basdat') #menambah list
+# print(praktikum)
+
+# print(praktikum)  #menampilkan list
+
+# for i in praktikum:  #untuk menyembunyikan list
+#     print(i) 
+
+#     print(praktikum[1][1]) #menampilkan list ke 1 index ke 1
+
+#list bisa diubah, tuple tidak bisa diubah
+# tuple = ('apd') #tuple itu lebih dari 1 elemen #list boleh 1 elemen #kalau tuple harus ada koma #tidak bisa diubah
+# print(type(tuple)) #yg membedakan list dan tuple hanya kurung biasa dan kurung siku 
+
+# tugas =('yoga', 'arduino', 'scrapping', 'matriks', 'visualisasi')
+
+# (nama, orsikom, basisdata, *manipulasiData) 
