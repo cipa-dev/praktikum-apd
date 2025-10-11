@@ -1,0 +1,24 @@
+# a = 10
+# b = 5 
+# c = a + b
+# print(c)
+
+# namadepan = syifa siti 
+# namabelakang = aulia anwar
+# print ('namadepan + namabelakang')
+
+# teks = 'saya suka belajar'
+# print(teks)
+
+# hujan = True
+# if hujan == True:
+#     print('saya di rumah') 
+# else:
+#     print('saya tidur') 
+
+
+# prodi = ['informatika','sistem informasi','pertambangan']
+# print(prodi[0])
+
+# nama = input('masukkan nama kalian :')
+# print(f'nama saya {cipa}, nama kamu siapa')
