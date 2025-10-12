@@ -45,7 +45,7 @@ while True:
                     else:
                         for i in range(len(produk)):
                             print(f"{i+1}. Nama: {produk[i][0]}, Harga: {produk[i][1]}, Stok: {produk[i][2]}")
-                    input("Tekan Enter Untuk Lanjut...")
+                    input("Tekan Enter Untuk Lanjut")
 # menu admin untuk menambah produk
                 elif menu_admin == "2":
                     print("\n--- Tambah Produk ---")
@@ -79,7 +79,7 @@ while True:
                     input("Tekan Enter Untuk Lanjut")
 # menu admin untuk menghapus produk
                 elif menu_admin == "4":
-                    print("\n=== Hapus Produk ===")
+                    print("\n--- Hapus Produk ---")
                     for i in range(len(produk)):
                         print(f"{i+1}. Nama: {produk[i][0]}, Harga: {produk[i][1]}, Stok: {produk[i][2]}")
                     idx = input("Pilih nomor produk: ")
@@ -96,7 +96,7 @@ while True:
                     print("Pilihan tidak valid.")
                     input("Tekan Enter Untuk Lanjut")
 # menu untuk member
-        elif role == "user":
+        elif role == "member":
             while True:
                 os.system('cls' if os.name == 'nt' else 'clear')
                 print("--- Menu Member ---")
