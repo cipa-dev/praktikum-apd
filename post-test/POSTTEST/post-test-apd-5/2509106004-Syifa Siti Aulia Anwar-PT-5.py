@@ -25,7 +25,7 @@ while True:
                 role = a[2]
                 break
         if role == None:
-            print("Login Gagal.")
+            print("Login Gagal, Cek Kembali Username Dan Password")
             input("Tekan Enter Untuk Lanjut")
         elif role == "admin":
             while True:
@@ -39,7 +39,7 @@ while True:
                 print("5. Logout")
                 menu_admin = input("Pilih Menu: ")
                 if menu_admin == "1":
-                    print("\n--- Daftar Produk ---")
+                    print("\n--- Daftar Produk Syifa Hijab ---")
                     if len(produk) == 0:
                         print("Belum Ada Produk")
                     else:
@@ -48,13 +48,13 @@ while True:
                     input("Tekan Enter Untuk Lanjut")
 # menu admin untuk menambah produk
                 elif menu_admin == "2":
-                    print("\n--- Tambah Produk ---")
+                    print("\n--- Tambah Produk Baru ---")
                     nama = input("Nama produk: ")
                     harga = input("Harga: ")
                     stok = input("Stok: ")
                     if harga.isdigit() and stok.isdigit():
                         produk.append([nama, int(harga), int(stok)])
-                        print("Produk Berhasil Ditambahkan.")
+                        print("Produk Berhasil Ditambahkan")
                     else:
                         print("Harga Dan Stok Harus Angka")
                     input("Tekan Enter Untuk Lanjut")
@@ -71,11 +71,11 @@ while True:
                         stok = input("Stok Baru: ")
                         if harga.isdigit() and stok.isdigit():
                             produk[i] = [nama, int(harga), int(stok)]
-                            print("Produk Berhasil Diubah.")
+                            print("Produk Berhasil Diubah")
                         else:
-                            print("Harga Dan Stok Harus Angka.")
+                            print("Harga Dan Stok Harus Angka")
                     else:
-                        print("Nomor Tidak Valid.")
+                        print("Nomor Tidak Valid")
                     input("Tekan Enter Untuk Lanjut")
 # menu admin untuk menghapus produk
                 elif menu_admin == "4":
@@ -85,7 +85,7 @@ while True:
                     idx = input("Pilih nomor produk: ")
                     if idx.isdigit() and 1 <= int(idx) <= len(produk):
                         produk.pop(int(idx) - 1)
-                        print("Produk berhasil dihapus")
+                        print("Produk Berhasil Dihapus")
                     else:
                         print("Nomor Tidak Valid")
                     input("Tekan Enter Untuk Lanjut")
