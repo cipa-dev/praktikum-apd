@@ -41,7 +41,7 @@ while True:
                 if menu_admin == "1":
                     print("\n--- Daftar Produk ---")
                     if len(produk) == 0:
-                        print("Belum Ada Produk.")
+                        print("Belum Ada Produk")
                     else:
                         for i in range(len(produk)):
                             print(f"{i+1}. Nama: {produk[i][0]}, Harga: {produk[i][1]}, Stok: {produk[i][2]}")
@@ -56,7 +56,7 @@ while True:
                         produk.append([nama, int(harga), int(stok)])
                         print("Produk Berhasil Ditambahkan.")
                     else:
-                        print("Harga dan stok harus angka.")
+                        print("Harga Dan Stok Harus Angka")
                     input("Tekan Enter Untuk Lanjut")
 # menu admin untuk mengubah produk
                 elif menu_admin == "3":
@@ -85,15 +85,15 @@ while True:
                     idx = input("Pilih nomor produk: ")
                     if idx.isdigit() and 1 <= int(idx) <= len(produk):
                         produk.pop(int(idx) - 1)
-                        print("Produk berhasil dihapus.")
+                        print("Produk berhasil dihapus")
                     else:
-                        print("Nomor tidak valid.")
+                        print("Nomor Tidak Valid")
                     input("Tekan Enter Untuk Lanjut")
 # tampilan jika pilihan tidak valid
                 elif menu_admin == "5":
                     break
                 else:
-                    print("Pilihan tidak valid.")
+                    print("Pilihan Tidak Valid")
                     input("Tekan Enter Untuk Lanjut")
 # menu untuk member
         elif role == "member":
@@ -107,7 +107,7 @@ while True:
                 if menu_member == "1":
                     print("\n--- Daftar Produk ---")
                     if len(produk) == 0:
-                        print("Belum Ada Produk.")
+                        print("Belum Ada Produk")
                     else:
                         for i in range(len(produk)):
                             print(f"{i+1}. Nama: {produk[i][0]}, Harga: {produk[i][1]}, Stok: {produk[i][2]}")
@@ -116,7 +116,7 @@ while True:
                 elif menu_member == "2":
                     break
                 else:
-                    print("Pilihan Tidak Valid.")
+                    print("Pilihan Tidak Valid")
                     input("Tekan Enter Untuk Lanjut")
 # membuat akun baru
     elif menu_awal == "2":
@@ -133,16 +133,16 @@ while True:
         if duplikat:
             print("Username Sudah Digunakan.")
         elif role not in ["admin", "member"]:
-            print("Role tidak valid.")
+            print("Role Tidak Valid.")
         else:
             akun.append([username, password, role])
             print("Akun Berhasil Dibuat.")
         input("Tekan Enter Untuk Lanjut")
 
     elif menu_awal == "3":
-        print("Terima Kasih Telah Menjadi Pelanggan Syifa Hijab,")
+        print("Terima Kasih Telah Menggunakan Program Syifa Hijab")
         break
 
     else:
-        print("Pilihan Tidak Valid.")
+        print("Pilihan Tidak Valid")
         input("Tekan Enter Untuk Lanjut")
