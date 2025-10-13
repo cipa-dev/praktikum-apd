@@ -57,7 +57,7 @@ while True:
                     harga = input("Harga: ")
                     stok = input("Stok: ")
                     if harga.isdigit() and stok.isdigit():
-                        produk.append([nama, int(harga), int(stok)])
+                        produk += [[nama, int(harga), int(stok)]]
                         print("Produk Berhasil Ditambahkan")
                     else:
                         print("Harga Dan Stok Harus Angka")
@@ -94,7 +94,8 @@ while True:
                         print(f"{i+1}. Nama: {produk[i][0]}, Harga: {produk[i][1]}, Stok: {produk[i][2]}")
                     idx = input("Pilih nomor produk: ")
                     if idx.isdigit() and 1 <= int(idx) <= jumlah_produk:
-                        produk.pop(int(idx) - 1)
+                        i = int(idx) - 1
+                        produk = produk[:i] + produk[i+1:]
                         print("Produk Berhasil Dihapus")
                     else:
                         print("Nomor Tidak Valid")
@@ -166,20 +167,20 @@ while True:
                 else:
                     print("Pilihan Tidak Valid")
                     input("Tekan Enter Untuk Lanjut")
-# untuk register akun baru
+# membuat akun baru untuk login 
     elif menu_awal == "2":
         os.system('cls' if os.name == 'nt' else 'clear')
         print("--- Register Akun Baru ---")
         username = input("Username baru: ")
         password = input("Password: ")
-        role = input("Role (admin/member): ").lower()
+        role = input("Role (admin/member): ").lower() # memilih role admin atau member
         duplikat = False
         for a in akun:
             if a[0] == username:
                 duplikat = True
                 break
         if duplikat:
-            print("Username Sudah Digunakan.")
+            print("Username Sudah Digunakan.") #jika username dan password sudah digunakan
         elif role not in ["admin", "member"]:
             print("Role Tidak Valid.")
         else:
