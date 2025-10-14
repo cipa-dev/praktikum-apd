@@ -184,7 +184,7 @@ while True:
         elif role not in ["admin", "member"]:
             print("Role Tidak Valid.")
         else:
-            akun.append([username, password, role])
+            akun = akun + [[username, password, role]]
             print("Akun Berhasil Dibuat.")
         input("Tekan Enter Untuk Lanjut")
 # keluar dari program
