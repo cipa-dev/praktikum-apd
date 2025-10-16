@@ -1,0 +1,83 @@
+# Membuat set
+# buah = {"apel", "jeruk", "mangga", "apel"}
+# print(buah)
+# for i in buah:
+#     print(i, end=' ') #untuk menampilkan dalam satu baris menambahkan end = ' '
+
+# angka = {1,1,2,5,2,3,6}
+# unik = set(angka)
+# print(unik)
+
+# Daftar_buku = {
+# "Buku1" : "Bumi Manusia",
+# "Buku2" : "Laut Bercerita"
+# }
+# print(Daftar_buku['Buku1']) #untuk menampilkan isi dari key tertentu
+
+# Biodata = {
+#     "Nama" : "Ananda Daffa Harahap", #q itu depan, value itu belakang
+#     "NIM" : 2409106050,
+#     "KRS" : ["Pemrograman Web", "Struktur Data", "Basis Data"],
+#     "Mahasiswa_Aktif" : True,
+#     "Social Media" : {
+#     "Instagram" : "daffahrhap"
+#     }
+# }
+# print(Biodata)
+# for i, j in Biodata.items(): #biodata.items() untuk menampilkan key dan value
+#     print(i) #i=q
+#     print(j) #j=value
+
+# print(f"nama saya adalah {Biodata["Nama"]}") #menampilkan menggunakan f string
+# print(f"Instagram : {Biodata["Social Media"]['Instagram']}")
+# print(f"nama saya adalah {Biodata.get("Nama")}")
+# print(Biodata.get("Nama")) #get cara lain untuk menampilkan isi dari q
+
+# Film = {
+# "Avenger Endgame" : "Action",
+# "Sherlock Holmes" : "Mystery",
+# "The Conjuring" : "Horror"}
+
+# del Film["The Conjuring"] #menghapus key dan value
+
+# hapus = Film.pop('The COnjuring') # menghapus key dan value, tapi bisa menyimpan value yang dihapus ke variabel
+# print(hapus)
+# print(Film)
+
+# print(Film)
+# Film["ZombieLand"] = "Comedy" #untuk mengubah langsung kurung siku, tidak perlu =
+# Film.update({"The Conjuring" : "Comedy"}) # setelah diupdate value dari key "The Conjuring" menjadi "Comedy"
+# print(Film)
+
+# Musik = {
+#     "The Chainsmoker": ["All we Know", "The Paris"],
+#     "Alan Walker": ["Alone", "Lily"],
+#     "Neffex": ["Best of Me",['tes','halo'], "Memories"],
+#     'Paramore' : ["Misery Business", "Ain't It Fun", 
+#                 ['All We Know Is Falling',['Here We Go Again', 'My Heart']],'This Is Why' ]
+# }
+# print(Musik['Neffex'][1][0]) 
+
+# angka ={} #kurung kurawal untuk dectenery
+# print(type(angka))
+
+# angka = set() # untuk membuat set kosong
+# print(type(angka))
+
+# a = {10,11,12}
+# b = {11,13,14}
+# c= a & b #& itu iris jadi outputnya angka yang sama
+# print(c)
+
+# a = {10,11,12}
+# b = {11,13,14}
+# c= a | b #& itu iris jadi outputnya angka yang sama
+# print(c)
+
+# Nilai = {
+# "Matematika" : 80,
+# "B. Indonesia" : 90,
+# "B. Inggris" : 81,
+# }
+# print("Nilai : ", Nilai.setdefault)
+
