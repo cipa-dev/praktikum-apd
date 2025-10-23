@@ -1,0 +1,168 @@
+# def perkenalan():
+#     print('Mata Kuliah')
+#     print('Kalkulus')
+#     input('Tekan Enter Untuk Lanjut . . . .')
+
+# perkenalan()
+# x = 5 * 5 # variabel global
+# def perkalilan():
+#     x = 5 * 3
+#     print(x) # varabel lokal
+# perkalian()
+
+# def perkenalan(nama):
+#     print(f'Halo {nama} Selamat Berbelanja')
+
+# perkenalan('cipa')
+
+# def luasPersegiPanjang(panjang, lebar):
+#     luas = panjang * lebar 
+#     print(f'luas dari persegi panjang adalah {luas}')
+
+# luasPersegiPanjang('5','3')
+
+# def luaspersegi(sisi): # luas = 64
+#     luas = sisi*sisi
+#     return luas
+
+# print('luas persegi : ', (luaspersegi(8)))
+
+# rumus: sisi x sisi
+# def luas_persegi(sisi):
+#     luas = sisi * sisi
+#     return luas
+# # rumus: sisi x sisi x sisi
+# def volume_persegi(sisi):
+#     volume = luas_persegi(sisi) * sisi
+#     print('volume persegi =',volume)
+# luas_persegi(4)
+# volume_persegi(8)
+
+# def faktorial(n):
+# Basis (Base Case): Kondisi berhenti
+#     if n == 1 or n == 0:
+#         return 1
+# # Rekursi (Recursive Case): Fungsi memanggil dirinya sendiri contohnya 5*4*3*2*1
+#     else:
+#         return n * faktorial(n - 1) #menghentikan fungsi seperti break
+# # Memanggil fungsi
+# hasil = faktorial(5)
+# print(f"Hasil dari 5! adalah: {hasil}")
+# # Output:
+# # Hasil dari 5! adalah: 120
+
+# fungsi untuk menampilkan menu
+# def show_menu():
+#     print ("\n")
+#     print ("----------- MENU---------- ")
+#     print ("[1] Show Data")
+#     print ("[2] Insert Data")
+#     print ("[3] Edit Data")
+#     print ("[4] Delete Data")
+#     print ("[5] Exit")
+# menu = input("PILIH MENU> ")
+# print ("\n")
+# if menu == "1":
+#     show_data()
+# elif menu == "2":
+#     insert_data()
+# elif menu == "3":
+#     edit_data()
+# elif menu == "4":
+#     delete_data()
+# elif menu == "5":
+#     exit()
+# else:
+#     print ("Salah pilih!")
+
+
+# Fungsi untuk menampilkan semua data
+# Film = []
+# def show_data():
+#     if len(film) <= 0:
+#         print("Belum Ada data")
+#     else:
+#         print("ID | Judul Film")
+#         for indeks in range(len(film)):
+#             print(indeks, "|", film[indeks])
+
+# # Fungsi untuk menambah data
+# def insert_data():
+#     film_baru = input("Judul Film: ")
+#     film.append(film_baru)
+#     print("Film berhasil ditambahkan!")
+
+# # Fungsi untuk mengedit data
+# def edit_data():
+#     show_data()
+#     indeks = int(input("Inputkan ID film: "))
+#     if indeks >= len(film) or indeks < 0:
+#         print("ID salah")
+#     else:
+#         judul_baru = input("Judul baru: ")
+#         film[indeks] = judul_baru
+#         print("Film berhasil diupdate!")
+
+# # Fungsi untuk menghapus data
+# def delete_data():
+#     show_data()
+#     indeks = int(input("Inputkan ID film: "))
+#     if indeks >= len(film) or indeks < 0:
+#         print("ID salah")
+#     else:
+#         film.remove(film[indeks])
+#         print("Film berhasil dihapus!")
+
+# # fungsi untuk menampilkan menu
+# def show_menu():
+#     print ("\n")
+#     print ("----------- MENU---------- ")
+#     print ("[1] Show Data")
+#     print ("[2] Insert Data")
+#     print ("[3] Edit Data")
+#     print ("[4] Delete Data")
+#     print ("[5] Exit")
+# menu = input("PILIH MENU> ")
+# print ("\n")
+# if menu == "1":
+#     show_data()
+# elif menu == "2":
+#     insert_data()
+# elif menu == "3":
+#     edit_data()
+# elif menu == "4":
+#     delete_data()
+# elif menu == "5":
+#     exit()
+# else:
+#     print ('salah pilih!')
+# while (True)
+#     show_menu
+
+# harga = int(input('masukkan harga\t:'))
+# print(harga)
+
+# try:
+#     angka = int(input('masukkan harga\t'))
+# except ValueError:
+#     print('input bukan berupa angka')
+# else:
+#     print (angka)
+# finally: 
+#     print('zidan')
+
+# try:
+#     usn = input('username yang diinginkan:')
+#     if len(usn) < 5:
+#         raise ValueError('nama minimal memiliki 5 karakter')
+# except ValueError as e:
+
+# try:
+#     password = input("masukkan password: ")
+#     if len(password) < 8:
+#         raise ValueError("password harus memiliki minimal 8 karakter.")
+#     if not any(karakter.isdigit() for karakter in password):
+#         raise ValueError("password harus mengandung minimal satu angka.")
+#     print("password valid!")
+# except ValueError as error:
+#     print("Error:", error)
