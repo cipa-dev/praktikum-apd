@@ -1,6 +1,6 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
+# import matplotlib.pyplot as plt
+# import pandas as pd
+# import numpy as np
 
 # Inisialisasi kanvas
 # plt.figure(figsize=(12, 6))
@@ -10,15 +10,24 @@ import numpy as np
 # plt.ylabel('kasih nama Sumbu Y')
 # plt.title("Ini judul loh")
 
-x = [1, 2, 3, 4, 5]
-y = [10, 35, 20, 70, 60]
+# x = [1, 2, 3, 4, 5]
+# y = [10, 35, 20, 70, 60]
 
-plt.figure(figsize=(8, 4))
-# plt.plot()
-plt.plot(x, y)
-# Detail element
-plt.title("Contoh Grafik") #judul grafik
-plt.xlabel("Sumbu X") # nama sumbu x
-plt.ylabel("Sumbu Y") # nama sumbu y
-plt.grid(True)
-plt.show() # untuk menampilkan grafik
+# plt.figure(figsize=(8, 4))
+# # plt.plot()
+# plt.plot(x, y)
+# # Detail element
+# plt.title("Contoh Grafik") #judul grafik
+# plt.xlabel("Sumbu X") # nama sumbu x
+# plt.ylabel("Sumbu Y") # nama sumbu y
+# plt.grid(True)
+# plt.show() # untuk menampilkan grafik
+
+#csv itu untuk simpan data tabel
+#memisahkan data dengan menggunakan koma
+#contohnya
+#nama, umur, tinggi
+#cipa, 118, 154
+
+#to itu untuk read atau menukar data
+
