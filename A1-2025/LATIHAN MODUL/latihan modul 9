@@ -31,3 +31,8 @@
 
 #to itu untuk read atau menukar data
 
+# import pandas as pd
+# url = 'https://raw.githubusercontent.com/orkvacy/dummy-data/refs/heads/main/dummyData.csv'
+# data = pd.read_csv(url)
+# df.head()
+
